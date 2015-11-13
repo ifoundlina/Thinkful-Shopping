@@ -27,13 +27,13 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #57340f;
 }
 
 html,
 body {
 	height: 100%;
 }
+
 
 #container{
 	margin-left: auto;
@@ -66,63 +66,91 @@ h1{
 	text-transform: uppercase;
 }
 
+p{
+    background-color: #ffac33;
+    border-radius: 15px;
+    color: #fff;
+    display: table;
+    font-size: 14pt;
+    height: 30px;
+    line-height: 24pt;
+    margin: 15px auto;
+    padding: 0 15px;
+}
+
 /**
  * checklist
  */
 
-
 .checklist{
-	padding-top: 125px;
-	font-family: 'Source Sans Pro', sans-serif;
-	vertical-align: center;
-}
-
-ol {
-	background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    vertical-align: center;
+    background-color: #ffffff;
     border-radius: 15px;
-    margin: 15px auto;
+    margin: 100px auto;
     padding: 40px;
     max-width: 600px;
     box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.75);
 }
 
-li{
-    background-color: #ff9933;
+
+
+#add-items {
+    background-color: #fff0b3;
+    border: none;
     border-radius: 15px;
-    display: table;
-    font-size: 16pt;
-    color: #ffffff;
+    font-size: 12pt;
+  	display: inline-block;
     height: 30px;
     line-height: 24pt;
     margin: 15px auto;
-    padding: 0 15px;
-    min-width: 500px;
     text-align: center;
+    width: 500px;
+}
+
+input[type=text]:focus {
+	border: none;
+	outline: none;
+}
+
+input, select, textarea{
+    color: #b35900;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #e68900
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #e68900
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:   #e68900
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #e68900
 }
 
 
-.input {
-background-color: #ffdc99;
-font-size: 14pt;
-color: #cc8800;
+.full-width{
+	width: 500px;
 }
 
-.crossed {
-background-color: #ffbf00;
-font-size: 14pt;
-color: #57340f;
-text-decoration: line-through;
-font-style: italic;
 
-}
+/**
+ * checkmarks, X-marks & Add back
+ */
 
-.delete{
+.delete{ 
 	cursor: pointer;
 	margin-top: 5px;
 	float: left;
 	height: 22px;
 	width: 22px;
 	background: url('../images/x-mark.png');
+}
+
+.alt-delete{
+	background: url('../images/alt-x-mark.png');
 }
 .cross-off{
 	cursor: pointer;
@@ -132,21 +160,16 @@ font-style: italic;
 	width: 22px;
 	background: url('../images/check-mark.png');
 }
-.other-delete{
-	cursor: pointer;
-	margin-top: 5px;
-	float: left;
-	height: 22px;
-	width: 22px;
-	background: url('../images/alt-x-mark.png');
+
+.add-back{
+	background: url('../images/add-back.png');
 }
-.add{
-	cursor: pointer;
-	margin-top: 5px;
-	float: right;
-	height: 22px;
-	width: 22px;
-	background: url('../images/add.png');
+
+
+.strikethrough{
+	background-color: #ff8433;
+    font-style: italic;
+	text-decoration: line-through !important;
 }
 /**
  * Footer Section
