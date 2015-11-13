@@ -46,7 +46,7 @@ body {
 #heading{
 	padding-bottom: 40px;
 	padding-top: 60px;
-    background: rgba(204, 153, 102, .7);
+    background: rgba(204, 153, 102, .5);
 }
 
 .brown-text{
@@ -96,7 +96,7 @@ p{
 
 
 #add-items {
-    background-color: #fff0b3;
+    background-color: #ffe0b3;
     border: none;
     border-radius: 15px;
     font-size: 12pt;
@@ -118,16 +118,16 @@ input, select, textarea{
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #e68900
+    color:    #ff9900;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #e68900
+    color:    #ff9900;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:   #e68900
+    color:   #ff9900;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #e68900
+    color:    #ff9900;
 }
 
 
@@ -177,9 +177,11 @@ input, select, textarea{
 
 .footer  {
 text-align: center;
+font-size: 14pt;
+ font-family: 'Source Sans Pro', sans-serif;
 padding-top: 30px;
-background-color: #57340f;
-color: #ffbf00;
+background-color: #ff9900;
+color: #57340f;
 position:absolute;
 bottom: 0;
 width: 100%;
